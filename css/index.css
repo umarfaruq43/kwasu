@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #57007e;
+  color: #fff;
+}
+
+/*********
+NAV
+****************/
+nav .b {
+  color: red;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  background-color: #fff;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0;
+ 
+}
+nav ul li {
+  display: inline;
+  padding: 1em;
+}
+nav ul li a {
+  font-weight: 600;
+  transition-duration: 1s;
+  color: ;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+.logo {
+  padding: 9px 0;
+}
+.menu {
+ 
+}
+.card{
+  color: #000;}
+/*********
+CONTENTS
+****************/
+
+.cover-page {
+  height: 60vh;
+  background-image: url(../img/aaron-burden-xG8IQMqMITM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/*********
+ INFO
+****************/
+.info {
+}
+
+.c {
+  background-color: #050542;
+  margin: 1em 0 2em 0;
+  width: 30%;
+  height: 300px;
+  padding: 2%;
+}
+
+/*********
+ Counter
+****************/
+
+.add {
+  background-color: #cf1515;
+}
+.count-group {
+  padding: 3em 0;
+  text-align: center;
+}
+.count-group span {
+  font-size: larger;
+  font-weight: 600;
+  color: #fff;
+}
+.count-group img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 1em;
+}
+.card {
+  width: 30%;
+}
+.l-w {
+  width: 300px;
+}
+.frame {
+  border: 1px solid red;
+}
+
+/*********
+ ABOUT US 
+****************/
+.about {
+  padding-bottom: 2em;
+}
+.more {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: large;
+}
+.m-us {
+  padding-top: 0.5em;
+}
+.content h2 {
+  font-size: 2.5em;
+  margin-top: 0px;
+}
+.content p {
+  font-size: large;
+}
+
+.about i {
+  font-size: 1.3em;
+  color: red;
+  border: 1px solid red;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px red;
+}
+
+/*********
+FOOTER
+****************/
+
+footer {
+  background-color: #0b0b1d;
+}
