@@ -7,6 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="js/bootstrap.min.js" />
@@ -19,50 +32,50 @@
 </head>
 
 <body>
- 
-   
-     <nav>
-        <img src="img/edu-logo.jpg" alt="" width="90px" class="logo">
-        <ul class="menu">
-          <li class="link">
-            <a href="#">Home</a>
-          </li>
-          <li class="link">
-            <a href="#">About</a>
-          </li>
-          <li class="link">
-            <a href="#">Courses</a>
-          </li>
-          <li class="link">
-            <a href="#">Department</a>
-          </li>
-          <li class="link">
-            <a href="#">Contact </a>
-          </li>
-          <li class="link">
-            <a href="#">
-              <i class="fas fa-user pr-2"></i>
-              Login
-            </a>
-          </li>
-          <li class="link">
-            <a href="#">
-              <i class="fas fa-lock pr-2"></i>
-              Sign up
-            </a>
-          </li>
-        </ul>
-     </nav>
-   
-  
+
+
+  <nav>
+    <img src="img/edu-logo.jpg" alt="" width="90px" class="logo">
+    <ul class="menu">
+      <li class="link">
+        <a href="#">Home</a>
+      </li>
+      <li class="link">
+        <a href="#">About</a>
+      </li>
+      <li class="link">
+        <a href="#">Courses</a>
+      </li>
+      <li class="link">
+        <a href="#">Department</a>
+      </li>
+      <li class="link">
+        <a href="#">Contact </a>
+      </li>
+      <li class="link" data-toggle="modal" data-target="#login">
+        <span href="">
+          <i class="fas fa-user pr-2"></i>
+          Login
+        </span>
+      </li>
+      <li class="link" data-toggle="modal" data-target="#sign-up">
+        <a href="#">
+          <i class="fas fa-lock pr-2"></i>
+          Sign up
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
 
   <!--------- CONTENTS ---------->
   <section class="cover-page" id="header">
     <div class="content text-light" style="z-index: 7; padding-top:4em ;">
       <div class="type">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis pariatur incidunt, quae iste itaque
-        corporis fugit, rerum dolor magni cumque officia molestiae repellendus sequi? Repellendus deleniti dolorum culpa
-        neque!
+        <h2>
+          Welcome to Kwasu E-book
+        </h2>
       </div>
     </div>
   </section>
@@ -213,6 +226,7 @@
         </div>
 
       </div>
+
     </div>
   </section>
   <!-- ================ ABOUT US ====================-->
@@ -259,20 +273,99 @@
     </div>
   </section>
 
+  <!-- ================ LOGIN AND SIGN UP MODAL POP UP ====================-->
+
+  <section class="login">
+    <!-- The Modal -->
+    <div class="modal" id="login">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="logo text-center">
+              <img src="img/kwasu.png" alt="" width="100px">
+            </div>
+            <form action="" class="">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="" id="" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Password</label>
+                <input type="password" name="" id="" class="form-control">
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-danger">
+                  Login
+                </button>
+              </div>
+              <div>
+                <a href="#">Forget Password?</a>
+              </div>
+            </form>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ================ LOGIN  MODAL POP UP END ====================-->
+
+
+  <!-- ================ Contact ====================-->
+  <section>
+    <h1 class="text-center">Contact-us</h1>
+    <div class="contact container">
+      <form action="">
+        <div class="form-group">
+          <input type="text" name="" id="" class="form-control" placeholder="Full Name">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="" id="" class="form-control" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <textarea name="" id="" c rows="5" class="form-control" placeholder="Your message..."></textarea>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
   <footer>
     <div class="d-flex justify-content-center">
       <div class="social">
-        <i class="fab fa-twitter"></div>
-        <i class="fab fa-facebook"></div>
-        <i class="fab fa-linkdel"></div>
-        <i class="fab fa-telegram"></div>
-        <div class="fas fa-envelope"></div>
-        <i class="fab fa-whatsapp"></div>
+        <a href="">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </div>
     <div class="text-center text-light py-3">
 
-      <hr>
+      <hr style="border: 1px solid purple;">
       <span class="">Copyright ©2020 All rights reserved</span>
     </div>
 
@@ -288,4 +381,7 @@
       loop: true
     });
   </script>
-  <script src="typed.js-master/src/typed.js"><
+  <script src="typed.js-master/src/typed.js"></script>
+</body>
+
+</html>
