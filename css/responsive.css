@@ -1,1 +1,9 @@
-@media screen and (maxwidth)
+@media screen and (max-width: 768px) {
+.nav-2{
+  display: block;
+}
+.nav-1{
+  display: none;
+}
+}
+

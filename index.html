@@ -34,7 +34,7 @@
 <body>
 
 
-  <nav>
+  <nav class="nav-1">
     <img src="img/edu-logo.jpg" alt="" width="90px" class="logo">
     <ul class="menu">
       <li class="link">
@@ -66,8 +66,42 @@
       </li>
     </ul>
   </nav>
+  <!--------- Responsive nav bar ---------->
+<nav class="navbar navbar-expand-md nav-2  navbar-light" style="background-color: #fff;">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img src="img/edu-logo.jpg" alt="" width="90px" class="logo">
+  </a>
 
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Department</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <!--------- CONTENTS ---------->
   <section class="cover-page" id="header">
@@ -80,43 +114,42 @@
     </div>
   </section>
   <!--------- INFO ---------->
-  <section class="  Info container-fluid">
-    <h2 class="text-center my-5">Welcome </h2>
-    <div class="font">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quae obcaecati dolore! Alias facilis
-      laboriosam odio aspernatur voluptate quam saepe, perspiciatis distinctio dolores temporibus id laborum, veniam,
-      autem modi dolorum!
-      <hr>
-    </div>
+  <section class="  Info ">
+    <h1 class="text-center my-5">
+      What we offer
+    </h1>
+
     <!--------- INFO ROW ---------->
-    <div class="us container-fluid">
-      <div class="d-sm-flex flex-wrap justify-content-between">
-        <div class="c">
-          <h3>Mobile App</h3>
-          <div class="mt-3">
-            Lacinia quis vel eros donec. Dolor sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et tortor
-            consequat id
-            porta.
-          </div>
-        </div>
-        <div class="c">
-          <h3>Mobile App</h3>
-          <div class="mt-3">
-            Lacinia quis vel eros donec. Dolor sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et tortor
-            consequat id
-            porta.
-          </div>
-        </div>
-        <div class="c">
-          <h3>Mobile App</h3>
-          <div class="mt-3">
-            Lacinia quis vel eros donec. Dolor sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et
-            tortor
-            consequat id
-            porta.
-          </div>
+
+    <div class="us ">
+      <div class="c ">
+        <h3>Mobile App</h3>
+        <div class="mt-3">
+          Lacinia quis vel eros donec. Dolor sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et tortor
+          consequat id
+          porta.
         </div>
       </div>
+
+      <div class="c ">
+        <h3>Mobile App</h3>
+        <div class="mt-3">
+          Lacinia quis vel eros donec. Dolor sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et tortor
+          consequat id
+          porta.
+        </div>
+      </div>
+
+      <div class="c ">
+        <h3>Mobile App</h3>
+        <div class="mt-3">
+          Lacinia quis vel eros donec. Dolor sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et
+          tortor
+          consequat id
+          porta.
+        </div>
+      </div>
+    </div>
   </section>
 
   <!----------COUNTER------------->
@@ -147,10 +180,10 @@
   </section>
   <!----- DEPARTMENTS ----->
 
-  <section class="derpartment pt-5">
+  <section class="derpartment pt-5 container-fluid">
     <h2 class="text-center">Available Departments</h2>
 
-    <div class="d-sm-flex flex-wrap justify-content-around pt-5">
+    <div class="us pt-5">
 
       <div class="card">
         <img class="card-img-top" src="img/aaron-burden-6jYoil2GhVk-unsplash.jpg" alt="Card image" style="width:100%">
@@ -371,17 +404,6 @@
 
   </footer>
 
-
-
-  <script>
-    var typed6 = new Typed('.type', {
-      strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
-      typeSpeed: 40,
-      backSpeed: 0,
-      loop: true
-    });
-  </script>
-  <script src="typed.js-master/src/typed.js"></script>
 </body>
 
 </html>

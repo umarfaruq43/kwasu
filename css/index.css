@@ -9,7 +9,7 @@ NAV
 nav .b {
   color: red;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,13 +20,13 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 1em 0;
- 
 }
 nav ul li {
   display: inline;
   padding: 1em;
 }
-nav ul li a, nav ul li span {
+nav ul li a,
+nav ul li span {
   font-weight: 600;
   transition-duration: 1s;
   color: blue;
@@ -38,11 +38,13 @@ nav ul li a:hover {
 .logo {
   padding: 9px 0;
 }
-.menu {
- 
+
+.card {
+  color: #000;
+  width: 21em;
+  margin-top: 5%;
+
 }
-.card{
-  color: #000;}
 /*********
 CONTENTS
 ****************/
@@ -59,15 +61,18 @@ CONTENTS
 /*********
  INFO
 ****************/
-.info {
-}
 
+.us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .c {
   background-color: #050542;
-  margin: 1em 0 2em 0;
-  width: 30%;
+  width: 21em;
   height: 300px;
-  padding: 2%;
+  color: #fff;
+  margin: 1em 0;
 }
 
 /*********
@@ -91,13 +96,10 @@ CONTENTS
   border-radius: 50%;
   margin: 1em;
 }
-.card {
-  width: 30%;
-}
+
 .l-w {
   width: 300px;
 }
-
 
 /*********
  ABOUT US 
@@ -124,11 +126,11 @@ CONTENTS
 
 .about i {
   font-size: 1.3em;
-  color: #007BFF;
-  border: 1px solid ;
+  color: #007bff;
+  border: 1px solid;
   padding: 5px;
   border-radius: 50%;
-  box-shadow: inset 0 0 5px #007BFF;
+  box-shadow: inset 0 0 5px #007bff;
 }
 
 /*********
@@ -138,18 +140,20 @@ FOOTER
 footer {
   background-color: #0b0b1d;
 }
-.social{
+.social {
   padding-top: 1em;
 }
-.social i{
+.social i {
   font-size: 2em;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
-.social  a:hover{
-text-decoration: none;
+.social a:hover {
+  text-decoration: none;
 }
 
 /*********
 MODAL
 ****************/
-
+.nav-2{
+  display: none;
+}
